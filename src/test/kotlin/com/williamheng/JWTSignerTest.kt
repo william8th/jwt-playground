@@ -30,5 +30,6 @@ class JWTSignerTest {
     @Test
     fun hasIssuer() {
         assertThat(jwt.jwtClaimsSet.issuer, notNullValue())
+        assertThat(jwt.jwtClaimsSet.issuer, equalTo("zopa.com"))
     }
 }
